@@ -1,0 +1,59 @@
+.create-post_box{
+  background-color: white;
+  height: 720px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 72px;
+  left: 0;
+  right: 0;
+}
+
+.create-post_box .box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    row-gap: 15px;
+}
+
+.bottom-div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.create-post_box .box button{
+    width: 150px;
+    height: 40px;
+    margin: auto 0;
+}
+
+.create-post_box .box input{
+    height: 40px;
+    width: auto;
+    margin-top: 15px;
+    border: 1px black solid;
+    outline: none;
+
+}
+
+.create-post_box .box textarea{
+    height: 520px;
+    resize: none;
+    border: 1px black solid;
+    outline: none;
+}
+
+.create-post_box .box #img-upload{
+    border: 0;
+}
+
+
+

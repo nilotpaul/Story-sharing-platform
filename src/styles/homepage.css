@@ -1,0 +1,19 @@
+/* body{
+    background: rgb(24, 51, 80);
+    background: rgb(71, 144, 160);
+} */
+
+
+.cards{
+    padding: 20px 0;
+    width: 100%;
+    
+}
+
+.control-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 12px;
+
+}
