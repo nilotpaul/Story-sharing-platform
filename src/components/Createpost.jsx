@@ -3,6 +3,7 @@ import { v4 as uuid } from "uuid"
 import "../styles/createpost.css"
 import axios from "axios"
 
+axios.defaults.baseURL = process.env.NEXT_PUBLIC_API_KEY
 
 const Createpost = ({ createPostOpen, setCreatePostOpen, title, setTitle, content, setContent, name, setName }) => {
 
@@ -18,7 +19,7 @@ const Createpost = ({ createPostOpen, setCreatePostOpen, title, setTitle, conten
         }
         try {
             if(title && content){
-            const res = await axios.post("http://localhost:5000/data", postSchema)
+            const res = await axios.post("/data", postSchema)
             console.log(res.data)
             setName("")
             setTitle("")

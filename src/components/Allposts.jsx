@@ -6,7 +6,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export function Allposts() {
 
-    const { data, error } = useSWR("http://localhost:5000/data", fetcher, {
+    const { data, error } = useSWR(`${process.env.NEXT_PUBLIC_API_KEY}/data`, fetcher, {
         refreshInterval: 1000,
         refreshWhenHidden: 0,
         refreshWhenOffline: 0
